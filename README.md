@@ -8,6 +8,20 @@ Everything runs locally on your computer. No cloud, no accounts, no tracking.
 
 ---
 
+## Why I built this, and why I stopped
+
+I built this as a deliberate hands-on exercise: a fully working, end-to-end tool — CLI, local server, UI, tests, the whole thing. I ran it for real across roughly 47 test sessions. Then I killed it on purpose. That decision is the point of this project.
+
+The code works. It's clean, it's tested, and it does exactly what it was designed to do. The problem was never the implementation — it was the approach. This tool decides whether you're monologuing using keyword heuristics and word-count density thresholds. Once I had it running against real conversation, the ceiling of that model became obvious: it can't do the one thing the problem actually requires, which is real-time understanding of semantics, tone, inflection, and conversational context.
+
+Concretely, it over-fires. A short, perfectly reasonable sentence that happens to contain a couple of trigger words gets flagged the same as an actual five-minute ramble. The heuristic has no way to tell the difference, because the difference isn't in the keywords or the word count — it's in the meaning. Doing this right wouldn't come from a better keyword list or more tuning; it would require genuine linguistic and behavioral modeling — effectively an LLM-based approach — to read what's actually being said and how.
+
+So I stopped. Not because I ran out of runway, but because polishing a solution built on the wrong foundation is how you sink cost into something that can't reach the bar. The useful outcome here wasn't a shipped product; it was recognizing that the approach was mismatched to the problem, and making the call to kill it rather than nurse it. I'd rather be honest about that than keep adding keywords to a model that was never going to get there.
+
+The rest of this README documents the system as it was actually built. It's a solid reference for the architecture and the AFD approach — just understand that the product itself was deliberately retired.
+
+---
+
 ## Quick Start (Mac)
 
 ### Prerequisites
@@ -166,12 +180,17 @@ Or add/remove keywords in the `ANALYSIS` section of `defaults.js` to change what
 
 ---
 
-## V1 Limitations
+## Why This Was Stopped
 
-- Transcript chunks are pasted manually (no mic integration yet)
+Some of these were deliberate scoping choices, and would be fine to leave as-is:
+
+- Transcript chunks are pasted manually (no mic integration)
 - Speaking duration is estimated from word count, not actual timing
-- Tone detection uses simple keyword matching, not AI/ML
 - Session data is only saved when you explicitly stop the session
 - The UI is intentionally simple and throwaway
 
-These are all fine for V1. The architecture is designed to make each of these easy to upgrade later.
+But one of them isn't a limitation to fix later — it's the reason the project was retired:
+
+- **Tone and monologue detection uses keyword matching and density thresholds, not semantic understanding.** This isn't a rough first pass waiting on a better keyword list. The heuristic approach is fundamentally mismatched to the problem. Deciding whether someone is actually monologuing — versus saying something short and reasonable that happens to trip a keyword — requires understanding meaning, tone, inflection, and conversational context in real time. Keywords and word counts can't capture that, so the tool over-fires and can't be tuned into correctness.
+
+A correct version would need genuine semantic and contextual understanding — effectively an LLM-based approach — not a refinement of this one. Recognizing that, and stopping here rather than polishing the wrong foundation, was the real outcome of the exercise.
