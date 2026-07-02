@@ -1,0 +1,52 @@
+{
+  "id": "session-1773692250348",
+  "status": "stopped",
+  "startedAt": "2026-03-16T20:17:30.348Z",
+  "stoppedAt": "2026-03-16T20:17:30.348Z",
+  "chunks": [],
+  "events": [
+    {
+      "type": "session_started",
+      "detail": {
+        "id": "session-1773692250348"
+      },
+      "timestamp": "2026-03-16T20:17:30.348Z"
+    },
+    {
+      "type": "session_stopped",
+      "detail": {},
+      "timestamp": "2026-03-16T20:17:30.348Z"
+    }
+  ],
+  "coachingState": "green",
+  "coachingMessage": "",
+  "escalationLevel": 0,
+  "consecutiveWarnings": 0,
+  "totalSpeakingSeconds": 0,
+  "thresholds": {
+    "greenMax": 45,
+    "yellowMax": 90
+  }
+}  "wordCount": 7,
+        "estimatedSeconds": 3,
+        "coachingState": "green",
+        "escalationLevel": 0
+      },
+      "timestamp": "2026-03-16T20:17:30.348Z"
+    },
+    {
+      "type": "session_stopped",
+      "detail": {},
+      "timestamp": "2026-03-16T20:17:30.348Z"
+    }
+  ],
+  "coachingState": "green",
+  "coachingMessage": "You're doing great. Keep the flow natural.",
+  "escalationLevel": 0,
+  "consecutiveWarnings": 0,
+  "totalSpeakingSeconds": 3,
+  "thresholds": {
+    "greenMax": 45,
+    "yellowMax": 90
+  }
+}

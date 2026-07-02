@@ -1,0 +1,53 @@
+{
+  "id": "session-1773692540805",
+  "status": "stopped",
+  "startedAt": "2026-03-16T20:22:20.805Z",
+  "stoppedAt": "2026-03-16T20:26:48.052Z",
+  "chunks": [
+    {
+      "text": "So basically what I was trying to say is that the fundamental issue here is really about the paradigm shift we need to make. Let me explain why this matters. The thing is, essentially, we need to rethink the entire framework from a strategic standpoint. In other words, the way I see it, the point is that we need to fundamentally reconsider our approach holistically.",
+      "wordCount": 65,
+      "estimatedSeconds": 26,
+      "hasQuestion": false,
+      "toneFlags": [
+        "over-explanatory",
+        "abstract"
+      ],
+      "coachingState": "red",
+      "timestamp": "2026-03-16T20:22:32.003Z"
+    }
+  ],
+  "events": [
+    {
+      "type": "session_started",
+      "detail": {
+        "id": "session-1773692540805"
+      },
+      "timestamp": "2026-03-16T20:22:20.805Z"
+    },
+    {
+      "type": "chunk_analyzed",
+      "detail": {
+        "wordCount": 65,
+        "estimatedSeconds": 26,
+        "coachingState": "red",
+        "escalationLevel": 0
+      },
+      "timestamp": "2026-03-16T20:22:32.003Z"
+    },
+    {
+      "type": "session_stopped",
+      "detail": {},
+      "timestamp": "2026-03-16T20:26:48.052Z"
+    }
+  ],
+  "coachingState": "red",
+  "coachingMessage": "Wrap it up now.",
+  "escalationLevel": 0,
+  "consecutiveWarnings": 1,
+  "totalSpeakingSeconds": 26,
+  "thresholds": {
+    "greenMax": 45,
+    "yellowMax": 90
+  }
+}

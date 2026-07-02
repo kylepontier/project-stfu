@@ -1,0 +1,90 @@
+{
+  "id": "session-1773693432012",
+  "status": "stopped",
+  "startedAt": "2026-03-16T20:37:12.012Z",
+  "stoppedAt": "2026-03-16T20:37:51.701Z",
+  "chunks": [
+    {
+      "text": "I have a perspective, but I want to hear your take first.",
+      "wordCount": 12,
+      "estimatedSeconds": 5,
+      "hasQuestion": false,
+      "toneFlags": [
+        "defensive"
+      ],
+      "coachingState": "yellow",
+      "timestamp": "2026-03-16T20:37:19.866Z"
+    },
+    {
+      "text": "Let me add a bit more context because there are several dependencies here and I want to make sure I frame them correctly.",
+      "wordCount": 23,
+      "estimatedSeconds": 9,
+      "hasQuestion": false,
+      "toneFlags": [],
+      "coachingState": "green",
+      "timestamp": "2026-03-16T20:37:38.077Z"
+    },
+    {
+      "text": "Let me walk through all of the background, because the original premise was shaped by earlier assumptions that created second-order constraints and those then affected how we thought about downstream execution...",
+      "wordCount": 31,
+      "estimatedSeconds": 12,
+      "hasQuestion": false,
+      "toneFlags": [],
+      "coachingState": "green",
+      "timestamp": "2026-03-16T20:37:45.593Z"
+    }
+  ],
+  "events": [
+    {
+      "type": "session_started",
+      "detail": {
+        "id": "session-1773693432012"
+      },
+      "timestamp": "2026-03-16T20:37:12.012Z"
+    },
+    {
+      "type": "chunk_analyzed",
+      "detail": {
+        "wordCount": 12,
+        "estimatedSeconds": 5,
+        "coachingState": "yellow",
+        "escalationLevel": 0
+      },
+      "timestamp": "2026-03-16T20:37:19.866Z"
+    },
+    {
+      "type": "chunk_analyzed",
+      "detail": {
+        "wordCount": 23,
+        "estimatedSeconds": 9,
+        "coachingState": "green",
+        "escalationLevel": 0
+      },
+      "timestamp": "2026-03-16T20:37:38.077Z"
+    },
+    {
+      "type": "chunk_analyzed",
+      "detail": {
+        "wordCount": 31,
+        "estimatedSeconds": 12,
+        "coachingState": "green",
+        "escalationLevel": 0
+      },
+      "timestamp": "2026-03-16T20:37:45.593Z"
+    },
+    {
+      "type": "session_stopped",
+      "detail": {},
+      "timestamp": "2026-03-16T20:37:51.701Z"
+    }
+  ],
+  "coachingState": "green",
+  "coachingMessage": "Conversational balance looks healthy.",
+  "escalationLevel": 0,
+  "consecutiveWarnings": 0,
+  "totalSpeakingSeconds": 26,
+  "thresholds": {
+    "greenMax": 45,
+    "yellowMax": 90
+  }
+}

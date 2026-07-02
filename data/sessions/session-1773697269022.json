@@ -1,0 +1,128 @@
+{
+  "id": "session-1773697269022",
+  "status": "stopped",
+  "startedAt": "2026-03-16T21:41:09.022Z",
+  "stoppedAt": "2026-03-16T21:42:51.263Z",
+  "chunks": [
+    {
+      "text": "So the context here is that the team has been struggling with delivery timelines. Just to set the stage, we've been dealing with shifting requirements and resource constraints. The backstory here is that the original architecture assumptions didn't hold up. I think the solution is we should split the system into two services.",
+      "wordCount": 53,
+      "estimatedSeconds": 21,
+      "hasQuestion": false,
+      "toneFlags": [],
+      "coachingState": "green",
+      "timestamp": "2026-03-16T21:41:15.471Z"
+    },
+    {
+      "text": "My recommendation is that we move the launch to next Tuesday. And also we should double check the QA reports. Another thing we should consider is whether marketing has finalized their materials. And one more thing we might want to look at the analytics pipeline.",
+      "wordCount": 45,
+      "estimatedSeconds": 18,
+      "hasQuestion": false,
+      "toneFlags": [],
+      "coachingState": "yellow",
+      "timestamp": "2026-03-16T21:41:53.109Z"
+    },
+    {
+      "text": "The fundamental paradigm here is really about aligning the conceptual framework with the broader systemic strategy so that the organization can holistically rethink how it approaches long term platform evolution.",
+      "wordCount": 30,
+      "estimatedSeconds": 12,
+      "hasQuestion": false,
+      "toneFlags": [
+        "abstract"
+      ],
+      "coachingState": "red",
+      "timestamp": "2026-03-16T21:42:09.609Z"
+    },
+    {
+      "text": "I think the best move is to restructure the teams into two pods, one focused on product velocity and the other focused on platform stability.",
+      "wordCount": 25,
+      "estimatedSeconds": 10,
+      "hasQuestion": false,
+      "toneFlags": [],
+      "coachingState": "red",
+      "timestamp": "2026-03-16T21:42:20.844Z"
+    },
+    {
+      "text": "I think we should move the launch to next Tuesday. The QA numbers last week showed a 15 percent drop in failure rates. What do you think?",
+      "wordCount": 27,
+      "estimatedSeconds": 11,
+      "hasQuestion": true,
+      "toneFlags": [],
+      "coachingState": "yellow",
+      "timestamp": "2026-03-16T21:42:30.394Z"
+    }
+  ],
+  "events": [
+    {
+      "type": "session_started",
+      "detail": {
+        "id": "session-1773697269022"
+      },
+      "timestamp": "2026-03-16T21:41:09.022Z"
+    },
+    {
+      "type": "chunk_analyzed",
+      "detail": {
+        "wordCount": 53,
+        "estimatedSeconds": 21,
+        "coachingState": "green",
+        "escalationLevel": 0
+      },
+      "timestamp": "2026-03-16T21:41:15.471Z"
+    },
+    {
+      "type": "chunk_analyzed",
+      "detail": {
+        "wordCount": 45,
+        "estimatedSeconds": 18,
+        "coachingState": "yellow",
+        "escalationLevel": 0
+      },
+      "timestamp": "2026-03-16T21:41:53.109Z"
+    },
+    {
+      "type": "chunk_analyzed",
+      "detail": {
+        "wordCount": 30,
+        "estimatedSeconds": 12,
+        "coachingState": "red",
+        "escalationLevel": 1
+      },
+      "timestamp": "2026-03-16T21:42:09.609Z"
+    },
+    {
+      "type": "chunk_analyzed",
+      "detail": {
+        "wordCount": 25,
+        "estimatedSeconds": 10,
+        "coachingState": "red",
+        "escalationLevel": 1
+      },
+      "timestamp": "2026-03-16T21:42:20.844Z"
+    },
+    {
+      "type": "chunk_analyzed",
+      "detail": {
+        "wordCount": 27,
+        "estimatedSeconds": 11,
+        "coachingState": "yellow",
+        "escalationLevel": 2
+      },
+      "timestamp": "2026-03-16T21:42:30.394Z"
+    },
+    {
+      "type": "session_stopped",
+      "detail": {},
+      "timestamp": "2026-03-16T21:42:51.263Z"
+    }
+  ],
+  "coachingState": "yellow",
+  "coachingMessage": "Try asking a question to involve others.",
+  "escalationLevel": 2,
+  "consecutiveWarnings": 0,
+  "totalSpeakingSeconds": 72,
+  "thresholds": {
+    "greenMax": 45,
+    "yellowMax": 90
+  }
+}

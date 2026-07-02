@@ -1,0 +1,53 @@
+{
+  "id": "session-1782253085742",
+  "status": "stopped",
+  "startedAt": "2026-06-23T22:18:05.742Z",
+  "stoppedAt": "2026-06-23T22:18:05.742Z",
+  "chunks": [
+    {
+      "text": "Here is my quick update. Any questions?",
+      "wordCount": 7,
+      "estimatedSeconds": 3,
+      "hasQuestion": true,
+      "toneFlags": [],
+      "coachingState": "green",
+      "hasFloorHandback": true,
+      "hasPreamblePattern": false,
+      "hasPostPointRamble": false,
+      "timestamp": "2026-06-23T22:18:05.742Z"
+    }
+  ],
+  "events": [
+    {
+      "type": "session_started",
+      "detail": {
+        "id": "session-1782253085742"
+      },
+      "timestamp": "2026-06-23T22:18:05.742Z"
+    },
+    {
+      "type": "chunk_analyzed",
+      "detail": {
+        "wordCount": 7,
+        "estimatedSeconds": 3,
+        "coachingState": "green",
+        "escalationLevel": 0
+      },
+      "timestamp": "2026-06-23T22:18:05.742Z"
+    },
+    {
+      "type": "session_stopped",
+      "detail": {},
+      "timestamp": "2026-06-23T22:18:05.742Z"
+    }
+  ],
+  "coachingState": "green",
+  "coachingMessage": "You're doing great. Keep the flow natural.",
+  "escalationLevel": 0,
+  "consecutiveWarnings": 0,
+  "totalSpeakingSeconds": 3,
+  "thresholds": {
+    "greenMax": 45,
+    "yellowMax": 90
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "project-stfu",
+  "version": "0.1.0",
+  "description": "A self-regulation assistant for video calls. Helps you avoid monologuing with real-time coaching.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "cli": "node cli.js"
+  },
+  "keywords": ["coaching", "self-regulation", "video-calls"],
+  "license": "MIT",
+  "private": true
+}

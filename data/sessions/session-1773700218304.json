@@ -1,0 +1,30 @@
+{
+  "id": "session-1773700218304",
+  "status": "stopped",
+  "startedAt": "2026-03-16T22:30:18.304Z",
+  "stoppedAt": "2026-03-16T22:30:18.304Z",
+  "chunks": [],
+  "events": [
+    {
+      "type": "session_started",
+      "detail": {
+        "id": "session-1773700218304"
+      },
+      "timestamp": "2026-03-16T22:30:18.304Z"
+    },
+    {
+      "type": "session_stopped",
+      "detail": {},
+      "timestamp": "2026-03-16T22:30:18.304Z"
+    }
+  ],
+  "coachingState": "green",
+  "coachingMessage": "",
+  "escalationLevel": 0,
+  "consecutiveWarnings": 0,
+  "totalSpeakingSeconds": 0,
+  "thresholds": {
+    "greenMax": 45,
+    "yellowMax": 90
+  }
+}

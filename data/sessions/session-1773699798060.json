@@ -1,0 +1,97 @@
+{
+  "id": "session-1773699798060",
+  "status": "stopped",
+  "startedAt": "2026-03-16T22:23:18.060Z",
+  "stoppedAt": "2026-03-16T22:24:48.280Z",
+  "chunks": [
+    {
+      "text": "My recommendation is that we move the launch to next Tuesday.",
+      "wordCount": 11,
+      "estimatedSeconds": 4,
+      "hasQuestion": false,
+      "toneFlags": [],
+      "coachingState": "green",
+      "hasFloorHandback": false,
+      "hasPreamblePattern": false,
+      "hasPostPointRamble": false,
+      "timestamp": "2026-03-16T22:23:21.794Z"
+    },
+    {
+      "text": "To give a little more context, the timeline shifted because of the integration work.",
+      "wordCount": 14,
+      "estimatedSeconds": 6,
+      "hasQuestion": false,
+      "toneFlags": [],
+      "coachingState": "yellow",
+      "hasFloorHandback": false,
+      "hasPreamblePattern": false,
+      "hasPostPointRamble": false,
+      "timestamp": "2026-03-16T22:23:29.694Z"
+    },
+    {
+      "text": "And also the QA reports showed some inconsistencies that are worth noting.",
+      "wordCount": 12,
+      "estimatedSeconds": 5,
+      "hasQuestion": false,
+      "toneFlags": [],
+      "coachingState": "yellow",
+      "hasFloorHandback": false,
+      "hasPreamblePattern": false,
+      "hasPostPointRamble": false,
+      "timestamp": "2026-03-16T22:23:47.811Z"
+    }
+  ],
+  "events": [
+    {
+      "type": "session_started",
+      "detail": {
+        "id": "session-1773699798060"
+      },
+      "timestamp": "2026-03-16T22:23:18.060Z"
+    },
+    {
+      "type": "chunk_analyzed",
+      "detail": {
+        "wordCount": 11,
+        "estimatedSeconds": 4,
+        "coachingState": "green",
+        "escalationLevel": 0
+      },
+      "timestamp": "2026-03-16T22:23:21.794Z"
+    },
+    {
+      "type": "chunk_analyzed",
+      "detail": {
+        "wordCount": 14,
+        "estimatedSeconds": 6,
+        "coachingState": "yellow",
+        "escalationLevel": 0
+      },
+      "timestamp": "2026-03-16T22:23:29.694Z"
+    },
+    {
+      "type": "chunk_analyzed",
+      "detail": {
+        "wordCount": 12,
+        "estimatedSeconds": 5,
+        "coachingState": "yellow",
+        "escalationLevel": 1
+      },
+      "timestamp": "2026-03-16T22:23:47.811Z"
+    },
+    {
+      "type": "session_stopped",
+      "detail": {},
+      "timestamp": "2026-03-16T22:24:48.280Z"
+    }
+  ],
+  "coachingState": "yellow",
+  "coachingMessage": "You've been holding the floor for several chunks. Let someone else in.",
+  "escalationLevel": 1,
+  "consecutiveWarnings": 0,
+  "totalSpeakingSeconds": 15,
+  "thresholds": {
+    "greenMax": 45,
+    "yellowMax": 90
+  }
+}

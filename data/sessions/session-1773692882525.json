@@ -1,0 +1,50 @@
+{
+  "id": "session-1773692882525",
+  "status": "stopped",
+  "startedAt": "2026-03-16T20:28:02.525Z",
+  "stoppedAt": "2026-03-16T20:29:19.490Z",
+  "chunks": [
+    {
+      "text": "Modern life is shaped by systems.\n\nTransportation networks. Financial infrastructure. Software platforms. Energy grids. Organizational processes. Communication networks.\n\nWe rarely think about these systems directly. Instead, we interact with their surfaces: the interfaces, tools, and services that expose them to us.\n\nWhen those surfaces are well designed, the system feels intuitive. When they are poorly designed, the system feels confusing or hostile.\n\nBut the real problem is often deeper than the interface.\n\nMany systems are simply too complex for the humans operating them.\n\nThis complexity does not appear overnight. It accumulates gradually as technologies evolve, organizations scale, and new layers of functionality are added. Over time, the system becomes harder to understand, harder to operate, and harder to trust.\n\nThe result is friction everywhere.\n\nPeople create workarounds. Organizations create new roles to manage complexity. Entire industries emerge to coordinate systems that were never designed to fit together in the first place.\n\nAt that point, the challenge is no longer one of interface design. It becomes a challenge of system design.",
+      "wordCount": 170,
+      "estimatedSeconds": 68,
+      "hasQuestion": false,
+      "toneFlags": [],
+      "coachingState": "red",
+      "timestamp": "2026-03-16T20:28:38.812Z"
+    }
+  ],
+  "events": [
+    {
+      "type": "session_started",
+      "detail": {
+        "id": "session-1773692882525"
+      },
+      "timestamp": "2026-03-16T20:28:02.525Z"
+    },
+    {
+      "type": "chunk_analyzed",
+      "detail": {
+        "wordCount": 170,
+        "estimatedSeconds": 68,
+        "coachingState": "red",
+        "escalationLevel": 0
+      },
+      "timestamp": "2026-03-16T20:28:38.812Z"
+    },
+    {
+      "type": "session_stopped",
+      "detail": {},
+      "timestamp": "2026-03-16T20:29:19.490Z"
+    }
+  ],
+  "coachingState": "red",
+  "coachingMessage": "Wrap it up now.",
+  "escalationLevel": 0,
+  "consecutiveWarnings": 1,
+  "totalSpeakingSeconds": 68,
+  "thresholds": {
+    "greenMax": 45,
+    "yellowMax": 90
+  }
+}

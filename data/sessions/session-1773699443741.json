@@ -1,0 +1,119 @@
+{
+  "id": "session-1773699443741",
+  "status": "stopped",
+  "startedAt": "2026-03-16T22:17:23.741Z",
+  "stoppedAt": "2026-03-16T22:19:27.829Z",
+  "chunks": [
+    {
+      "text": "My recommendation is that we move the launch to next Tuesday. And also we should double check the QA reports.",
+      "wordCount": 20,
+      "estimatedSeconds": 8,
+      "hasQuestion": false,
+      "toneFlags": [],
+      "coachingState": "green",
+      "hasFloorHandback": false,
+      "hasPreamblePattern": false,
+      "hasPostPointRamble": false,
+      "timestamp": "2026-03-16T22:17:28.243Z"
+    },
+    {
+      "text": "My recommendation is that we move the launch to next Tuesday. And also we should double check the QA reports.",
+      "wordCount": 20,
+      "estimatedSeconds": 8,
+      "hasQuestion": false,
+      "toneFlags": [],
+      "coachingState": "yellow",
+      "hasFloorHandback": false,
+      "hasPreamblePattern": false,
+      "hasPostPointRamble": false,
+      "timestamp": "2026-03-16T22:17:41.555Z"
+    },
+    {
+      "text": "My recommendation is that we move the launch to next Tuesday. And also we should double check the QA reports.",
+      "wordCount": 20,
+      "estimatedSeconds": 8,
+      "hasQuestion": false,
+      "toneFlags": [],
+      "coachingState": "yellow",
+      "hasFloorHandback": false,
+      "hasPreamblePattern": false,
+      "hasPostPointRamble": false,
+      "timestamp": "2026-03-16T22:17:51.742Z"
+    },
+    {
+      "text": "My recommendation is that we move the launch to next Tuesday. And also we should double check the QA reports.",
+      "wordCount": 20,
+      "estimatedSeconds": 8,
+      "hasQuestion": false,
+      "toneFlags": [],
+      "coachingState": "yellow",
+      "hasFloorHandback": false,
+      "hasPreamblePattern": false,
+      "hasPostPointRamble": false,
+      "timestamp": "2026-03-16T22:18:25.041Z"
+    }
+  ],
+  "events": [
+    {
+      "type": "session_started",
+      "detail": {
+        "id": "session-1773699443741"
+      },
+      "timestamp": "2026-03-16T22:17:23.742Z"
+    },
+    {
+      "type": "chunk_analyzed",
+      "detail": {
+        "wordCount": 20,
+        "estimatedSeconds": 8,
+        "coachingState": "green",
+        "escalationLevel": 0
+      },
+      "timestamp": "2026-03-16T22:17:28.243Z"
+    },
+    {
+      "type": "chunk_analyzed",
+      "detail": {
+        "wordCount": 20,
+        "estimatedSeconds": 8,
+        "coachingState": "yellow",
+        "escalationLevel": 0
+      },
+      "timestamp": "2026-03-16T22:17:41.555Z"
+    },
+    {
+      "type": "chunk_analyzed",
+      "detail": {
+        "wordCount": 20,
+        "estimatedSeconds": 8,
+        "coachingState": "yellow",
+        "escalationLevel": 1
+      },
+      "timestamp": "2026-03-16T22:17:51.742Z"
+    },
+    {
+      "type": "chunk_analyzed",
+      "detail": {
+        "wordCount": 20,
+        "estimatedSeconds": 8,
+        "coachingState": "yellow",
+        "escalationLevel": 1
+      },
+      "timestamp": "2026-03-16T22:18:25.041Z"
+    },
+    {
+      "type": "session_stopped",
+      "detail": {},
+      "timestamp": "2026-03-16T22:19:27.829Z"
+    }
+  ],
+  "coachingState": "yellow",
+  "coachingMessage": "Pattern: talking without check-ins. Try asking what they think.",
+  "escalationLevel": 1,
+  "consecutiveWarnings": 1,
+  "totalSpeakingSeconds": 32,
+  "thresholds": {
+    "greenMax": 45,
+    "yellowMax": 90
+  }
+}

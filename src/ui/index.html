@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project STFU — Self-Regulation Coach</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================================================================== -->
+  <!-- HEADER                                                             -->
+  <!-- ================================================================== -->
+  <header>
+    <h1>Project STFU</h1>
+    <p class="subtitle">Self-Regulation Assistant for Video Calls</p>
+  </header>
+
+  <!-- ================================================================== -->
+  <!-- MAIN LAYOUT — Two columns: left = controls, right = output         -->
+  <!-- ================================================================== -->
+  <main>
+
+    <!-- LEFT COLUMN: Controls -->
+    <section class="controls">
+
+      <!-- Session Controls -->
+      <div class="card">
+        <h2>Session</h2>
+        <div class="button-row">
+          <button id="btn-start" onclick="handleStart()">▶ Start Session</button>
+          <button id="btn-stop" onclick="handleStop()" disabled>⏹ Stop Session</button>
+          <button id="btn-reset" onclick="handleReset()" disabled>↺ Reset</button>
+        </div>
+        <div class="timer-row">
+          <span class="label">Session Timer:</span>
+          <span id="timer">00:00</span>
+        </div>
+      </div>
+
+      <!-- Transcript Input -->
+      <div class="card">
+        <h2>Transcript Input</h2>
+        <textarea
+          id="transcript-input"
+          placeholder="Paste what you just said here..."
+          rows="5"
+          disabled
+        ></textarea>
+        <button id="btn-analyze" onclick="handleAnalyze()" disabled>🔍 Analyze</button>
+      </div>
+
+      <!-- Status Badge -->
+      <div class="card">
+        <h2>Coaching Status</h2>
+        <div id="status-badge" class="badge badge-idle">IDLE</div>
+        <p id="coaching-message" class="coaching-message">Start a session to begin.</p>
+        <div id="reasoning" class="reasoning"></div>
+      </div>
+
+      <!-- Debug / Explanation Panel — Shows WHY the current result was produced -->
+      <div class="card" id="debug-panel">
+        <h2>Explanation</h2>
+        <div class="debug-grid">
+          <div class="debug-row">
+            <span class="debug-label">Primary Reason</span>
+            <span class="debug-value" id="debug-primary-reason">—</span>
+          </div>
+          <div class="debug-row">
+            <span class="debug-label">Escalation</span>
+            <span class="debug-value" id="debug-escalation">—</span>
+          </div>
+          <div class="debug-row">
+            <span class="debug-label">Triggered Signals</span>
+            <span class="debug-value" id="debug-signals">—</span>
+          </div>
+          <div class="debug-row">
+            <span class="debug-label">Reasoning</span>
+            <span class="debug-value" id="debug-reasoning">—</span>
+          </div>
+          <div class="debug-row">
+            <span class="debug-label">Stats</span>
+            <span class="debug-value" id="debug-stats">—</span>
+          </div>
+          <div class="debug-row">
+            <span class="debug-label">Rolling Context</span>
+            <span class="debug-value" id="debug-context">—</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- RIGHT COLUMN: Output -->
+    <section class="output">
+
+      <!-- Event Log -->
+      <div class="card">
+        <h2>Event Log</h2>
+        <div id="event-log" class="log">
+          <p class="log-entry muted">Events will appear here...</p>
+        </div>
+      </div>
+
+      <!-- Session Summary -->
+      <div class="card">
+        <h2>Session Summary</h2>
+        <pre id="summary-panel" class="summary">No session data yet.</pre>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Project STFU v0.1 — Built with AFD principles. Local only. No cloud. No tracking.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
